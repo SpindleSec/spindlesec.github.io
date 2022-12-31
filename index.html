@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+</style>
 <body>
 <h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<pre>git@github.com:~$ whoami</pre>
+<pre>SpindleSec</pre>
+<p><pre>git@github.com:~$ <span class="blink_me">&#9608;</span></pre></p>
 <a rel="me" href="https://infosec.exchange/@spindlesec"></a>
 </body>
 </html>
