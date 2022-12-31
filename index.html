@@ -35,6 +35,8 @@ body {
 }
 pre {
   margin: 0;
+  word-wrap:break-word;
+  white-space: pre-wrap;
 }
 .blink_me {
   animation: blinker 1s linear infinite;
@@ -47,9 +49,11 @@ pre {
 }
 </style>
 <body>
-<pre><output>git@github.com:~$ whoami
-SpindleSec
-git@github.com:~$ </output><output class="blink_me">&#9608;</output></pre>
+<pre><output>webserver:~$ whoami
+spindlesec
+webserver:~$ id ${USER}
+id=1000(spindlesec) gid=1000(spindlesec) groups=1000(spindlesec),1001(application_security),1002(dev_sec_ops),1003(open_source_security),1004(grc)
+webserver:~$ </output><output class="blink_me">&#9608;</output></pre>
 <a rel="me" href="https://infosec.exchange/@spindlesec"></a>
 </body>
 </html>
